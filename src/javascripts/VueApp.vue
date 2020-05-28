@@ -16,5 +16,6 @@
 <style scoped>
   p {
     color: green;
+    text-align: center;
   }
 </style>
