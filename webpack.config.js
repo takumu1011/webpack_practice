@@ -1,4 +1,5 @@
 const path = require('path');
+const outputPath = path.resolve(__dirname, 'dist');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -9,7 +10,7 @@ module.exports = {
   devtool: 'source-map',
   entry: './src/javascripts/main.js',
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: outputPath,
     filename: './javascripts/main.js'
   },
   module: {
